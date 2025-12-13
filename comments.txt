@@ -1,0 +1,16 @@
+Grade: 85/100
+
+-2pt: In Q1(i), features should include all variables used for prediction; therefore, the spending amounts of other products should not be included in X
+-3pt: In Q1(ii), using X.select_dtypes(include=['int64', 'float64']).columns to select numerical features is not reliable. It does not include types like int8, int32, etc. 
+      It is also fragile to use X.select_dtypes(include=['object']).columns to identify categorical variables for one-hot encoding - for example, objects like customerID should not be one-hot encoded.
+
+-2pts: In Q1 (iii), the "response" variable is not given for the new customer; so both possibilities need to be considered
+
+-6pts: In Q1 (v), the required 6-fold cv was not performed. (This task is different from the one in vi.)
+
+-2pt: In Q1 (vi), -2pts: In Q1 (vi), the CV doesdidnot shuffle data
+
+
+
+
+
